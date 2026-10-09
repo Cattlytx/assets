@@ -11,6 +11,9 @@ your human's. Their workflow does not change; yours does.
   In Progress, assign your human, comment one line on what prompted it.
 - **Something merely mentioned as needing doing is a Backlog ticket now.** Linear
   should hold everything we could be working on, not only what is in flight.
+- **Customer asks get sorted before filing: fix, adjustment, or new code.** New code
+  is filed unassigned with the `someday-never` label and is not a commitment. Say who
+  besides the requesting customer it helps. See "Customer asks" in the skill.
 - **Switching tasks: write the state of the old thing before you touch the new one.**
   What works, what is half built, what is broken, the branch, and what the next step
   was going to be. Then set its status honestly and move the new thing to In Progress.
