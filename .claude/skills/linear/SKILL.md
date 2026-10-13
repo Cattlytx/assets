@@ -95,20 +95,27 @@ on the relevant ticket as a comment, or becomes a new ticket if none fits.
 
 ## Customer asks: sort before you file
 
-Customers, Darr above all, send a steady stream of requests: in `#darr-feedlot`, on calls,
-in review documents. Wade is a product, not one feedlot's custom software, and the team is
-too small to build every idea. So sort every customer request into one of three buckets
+Customers send a steady stream of requests: in their Slack channels, on calls, in review
+documents. Wade is a product, not any one customer's custom software, and the team is too
+small to build every idea. So sort every customer request into one of three buckets
 **before** it becomes a ticket:
 
 | Bucket | Test | File it as |
 |---|---|---|
-| **Fix** | Something that exists is broken or gives a wrong answer. | `Bug`, assigned to whoever will fix it. |
-| **Adjustment** | Something that exists needs to change to work the way customers use it. | `Improvement`, `Backlog`, assigned to the owner of that area. |
-| **New code** | It does not exist yet. | `Feature`, `Backlog`, **unassigned**, label `someday-never`. |
+| **Fix** | Something that exists is broken or gives a wrong answer. | `Bug`, `Todo`. |
+| **Adjustment** | Something that exists needs to change to work the way customers use it. | `Improvement`, `Backlog`, with its area label. |
+| **New code** | It does not exist yet. | `Feature`, `Backlog`, label `someday-never`. |
+
+The assignee rule above still holds: leave the ticket unassigned until someone actually picks
+it up. Jeff or Andrew may assign it when they schedule it.
 
 `someday-never` is deliberate: a feature request is not a commitment. A ticket leaves that
 bucket only when Andrew can name a prospect who would refuse to buy Wade without it. Only
-Jeff or Andrew removes the label. Agents never do, and never assign a `someday-never` ticket.
+Jeff or Andrew removes the label. Agents never remove it.
+
+**If your human is about to start a `someday-never` ticket,** stop and say so before any
+code. If Jeff or Andrew has approved it, remove nothing yourself: comment who approved it and
+when, then assign and move it to `In Progress` as usual. If nobody approved it, it waits.
 
 **Generality check, for every adjustment and every new feature:** put one line in the
 description saying who besides the requesting customer it helps. If the honest answer is
